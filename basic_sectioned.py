@@ -7,7 +7,7 @@ lists = st.container()
 user_input = st.container()
 
 with header:
-    st.title('Welcome to my new app exploring Stramlit!')
+    st.title('Welcome to my new app exploring Streamlit!')
     st.text('Modified from YouTube video "How to Integrate Machine Learning to Streamlit')
     st.text('- Part 3" (Misra Turp)')
 
