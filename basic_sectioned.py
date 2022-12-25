@@ -29,12 +29,12 @@ with lists:
     st.markdown('* **Sault:**   11 ')
 
 with user_input:
-        st.header('This section provides some user input options:')
+        st.header('This section provides some Streamlit user input options:')
         # create two columns within the user_input row/container
         select_col, display_col = st.columns(2)
 
         dave_runs = select_col.slider('What score will David Warner get in the 1st innings of the Boxing Day test (2022)?', min_value=0, max_value=250, value=35, step =1)
-        dave_ducks = select_col.selectbox('How many ducks will he get in the test?', options = [0,1,2])
+        dave_ducks = select_col.selectbox('How many ducks will he get in the test?', options = [0,1,2,3,4,5])
 
         display_col.text('1st innings runs: ')
         display_col.write(dave_runs, font_size = 100)
