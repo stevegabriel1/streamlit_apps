@@ -23,7 +23,7 @@ with dataset:
     st.line_chart(close_dat)
 
 with lists:
-    st.header('Here is some of the best music of 2022')
+    st.header('Here is some great music from 2022')
     st.markdown('* **The Smile:**   A Light For Attracting Attention ')
     st.markdown('* **King Stingray:**   King Stingray ')
     st.markdown('* **Sault:**   11 ')
