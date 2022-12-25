@@ -7,18 +7,18 @@ lists = st.container()
 user_input = st.container()
 
 with header:
-    st.title('Welcome -  this is for my exploration of Streamlit functionality!')
-    st.text('Modified from YouTube video "How to Integrate Machine Learning to Streamlit')
+    st.title('Welcome -  the purpose of this is to explore some Streamlit functionality!')
+    st.text('Inspired by YouTube video "How to Integrate Machine Learning to Streamlit')
     st.text('- Part 3" (Misra Turp)')
 
 
 with dataset:
-    st.header('Google shares data')
+    st.header('Alphabet Inc shares data')
 
     gdat = pd.read_csv('data/goog_stock.csv')
     st.write(gdat.head())
     st.subheader('Closing price from 2014 to current')
-    st.subheader('GOOG')
+    st.subheader('NASDAQ: GOOGL')
     close_dat = pd.DataFrame(gdat['close'])
     st.line_chart(close_dat)
 
